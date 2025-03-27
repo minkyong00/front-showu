@@ -62,7 +62,7 @@ const Apply = ({ PAGINATION, currentList, page, setPage, totalPost, jwtToken, ge
 
               <ul>
                 <S.UserInfo>  
-                  <img src={currentUser.picture || 'http://localhost:8000/uploads/profiles/user.png'} alt="team profile"></img>
+                  <img src={`http://localhost:8000${item.teamId.teamProfile}`} alt="team profile"></img>
                   <div>
                     <li>{item.teamId.teamName}</li>
                     <li className='teamName'>{item.applyId.name}</li>
